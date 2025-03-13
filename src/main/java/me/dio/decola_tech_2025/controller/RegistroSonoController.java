@@ -44,4 +44,12 @@ public class RegistroSonoController {
         RegistroSono registroAtualizado = service.update(id, registroSono);
         return ResponseEntity.ok(registroAtualizado);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        service.delete(id);
+        return ResponseEntity.noContent().build();
+    }
+
+
 }

@@ -10,7 +10,7 @@ public interface RegistroSonoService {
     // Inclusão
     RegistroSono create(RegistroSono registroSono);
     // Deleção
-    void deletarRegistro(Long id);
+    void delete(Long id);
     // Alteração.
     RegistroSono update(Long id, RegistroSono novoRegistro);
 }

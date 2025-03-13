@@ -34,7 +34,7 @@ public class RegistroSonoServiceImpl implements RegistroSonoService {
     }
 
     @Override
-    public void deletarRegistro(Long id) {
+    public void delete(Long id) {
         if (!repository.existsById(id)) {
             throw new NoSuchElementException("Registro de sono não encontrado");
         }
