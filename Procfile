@@ -1,0 +1,1 @@
+web: java -jar build/libs/me.dio.decola_tech_2025-0.0.1-SNAPSHOT.jar
